@@ -59,10 +59,18 @@ class TaskController extends Controller
         ]);
     }
 
-    public function edit(int $id)
+    public function edit(int $id, int $task_id, EditTask $request)
     {
+        $task = Task::find($task_id);
+
+        $task->title = $request->title;
+        $task->due_date = $requet->due_date;
+        $task->status = $request->status;
+        $task->save();
+
         return redirect()->route('tasks.index', [
-            'id' => $id
+            'id' => $task->folder_id
         ]);
+
     }
 }
