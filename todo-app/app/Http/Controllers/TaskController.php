@@ -7,6 +7,7 @@ use App\Task;
 use App\Http\Requests\CreateFolder;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreateTask;
+use App\Http\Requests\EditTask;
 
 class TaskController extends Controller
 {
@@ -64,7 +65,7 @@ class TaskController extends Controller
         $task = Task::find($task_id);
 
         $task->title = $request->title;
-        $task->due_date = $requet->due_date;
+        $task->due_date = $request->due_date;
         $task->status = $request->status;
         $task->save();
 

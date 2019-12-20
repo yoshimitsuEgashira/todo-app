@@ -2,11 +2,10 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 use App\Task;
 
-class EditTask extends FormRequest
+class EditTask extends CreateTask
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -45,7 +44,7 @@ class EditTask extends FormRequest
 
     public function messages()
     {
-        $messages = parent::messags();
+        $messages = parent::messages();
 
         $status_labels = array_map(function($item) {
             return $item['label'];
