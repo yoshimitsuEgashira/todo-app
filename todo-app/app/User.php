@@ -39,6 +39,6 @@ class User extends Authenticatable
 
     public function folders()
     {
-        return $this->hasMany('App\Folders');
+        return $this->hasMany('App\Folder');
     }
 }
