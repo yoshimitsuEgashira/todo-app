@@ -17,7 +17,14 @@ return [
     'max' => [
         'string' => ':attribute は :max 文字以内で入力してください。',
     ],
+    'min' => [
+        'string' => ':attibute には :min 文字以上で入力してください。',
+    ],
     'required' => ':attribute は必須入力です。',
+    'confirmed' => ':attribute が確認欄と一致していません。',
+    'email' => ':attribute には有効な形式のメールアドレスを入力してください。',
+    'string' => ':attribute には文字を入力してください。',
+    'unique' => '入力いただいた :attrbute は既にすでに使用されています。',
 
     /*
     |--------------------------------------------------------------------------
