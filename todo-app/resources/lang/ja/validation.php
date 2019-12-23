@@ -54,6 +54,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'email' => 'メール',
+        'password' => 'パスワード',
+        'token' => 'トークン'
+    ],
 
 ];
