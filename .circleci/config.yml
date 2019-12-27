@@ -1,0 +1,4 @@
+version: 2
+jobs:
+  docker:
+    - image: circleci/php:7.3
