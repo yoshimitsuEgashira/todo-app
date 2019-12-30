@@ -18,7 +18,7 @@ return [
         'string' => ':attribute は :max 文字以内で入力してください。',
     ],
     'min' => [
-        'string' => ':attibute には :min 文字以上で入力してください。',
+        'string' => ':attribute には :min 文字以上で入力してください。',
     ],
     'required' => ':attribute は必須入力です。',
     'confirmed' => ':attribute が確認欄と一致していません。',
