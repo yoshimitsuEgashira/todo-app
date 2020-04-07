@@ -9,10 +9,11 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "doctrine/dbal": ">=2.0",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
-        "doctrine/dbal": ">=2.0"
+        "symfony/http-foundation": "4.4.7"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
